@@ -1,0 +1,36 @@
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 80px;
+}
+
+#navbar img {
+	width: 47px;
+}
+
+#ul-div {
+	margin-top: 13px;
+}
+
+#navbar ul {
+	display: flex;
+	list-style: none;
+	gap: 40px;
+	font-family: "Ubuntu", sans-serif;
+	height: fit-content;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.btn {
+	background: #1fb598;
+	color: white;
+	border-radius: 10px;
+	font-family: "Ubuntu", sans-serif;
+	line-height: 15px;
+	width: 150px;
+}
