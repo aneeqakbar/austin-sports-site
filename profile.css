@@ -137,18 +137,6 @@ a {
 	padding: 10px 20px;
 }
 
-.already-p {
-	padding-left: 18px;
-}
-
-.already-p a {
-	color: #1fb598;
-}
-
-.already-p p{
-  font-size: 20px;
-}
-
-.already-p img{
-  padding-right: 30px;
+#address-input input{
+  width: 100%;
 }

@@ -1,6 +1,5 @@
 
 footer {
-	height: 45vh;
 	background: #d9d9d9;
 	display: flex;
 	flex-direction: column;
@@ -22,6 +21,7 @@ footer ul {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+  background: #d9d9d9;
 }
 
 .footer-logo{
@@ -35,6 +35,7 @@ footer ul {
 
 .socials img{
   padding: 13px;
+  margin-bottom: 30px !important;
 }
 
 .rights{

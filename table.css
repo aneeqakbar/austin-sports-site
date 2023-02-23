@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quantico", sans-serif;
+}
+
+.login-image {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.login-image img {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.login-image h1 {
+  text-align: center;
+  color: #1fb598;
+  position: absolute;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  width: 50%;
+}
+
+.table-wrapper {
+  width: max-content;
+  margin: 40px auto;
+}
+
+.table-nav {
+  width: 1357px;
+  height: 97px;
+  background: #262626;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px 20px 0px 0px;
+}
+
+.nav-container-p {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  margin: 20px 0px 10px 26px;
+}
+
+.nav-container-p div {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.nav-container-p div label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.nav-container-p div select {
+  width: 140px;
+  padding: 0px 5px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16.5323px);
+  border: 1px solid #1FB598;
+  border-radius: 5px;
+  outline: none;
+}
+
+.csv-btn button{
+  padding: 5px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16.5323px);
+  border: 1px solid #1FB598;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.search-input {
+  position: relative;
+  margin-left: auto;
+  margin-right: 39px;
+  color: white;
+}
+
+.search-input input{
+  padding: 15px 345px 15px 30px;
+  text-align: start;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16.5323px);
+  border: 1px solid #1FB598;
+  border-radius: 20px;
+  outline: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.search-input input::placeholder {
+  color: #fff;
+}
+
+.search-input img{
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.table-cont {
+  width: 1357px;
+  min-height: 750px;
+  background: #303030;
+  border: 1px solid #131313;
+  /* border-radius: 20px; */
+  border-bottom: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 15px;
+}
+
+.table-cont .table {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.table-cont .table .table-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 60px;
+
+}
+
+.table-cont .table .table-col p {
+  margin: 0px;
+}
+
+.table-cont .table .heading,
+.table-cont .table .desc {
+  border-radius: 3px;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.table-cont .table .heading {
+  height: 60px;
+  background: #262626;
+  font-weight: 700;
+}
+
+.table-cont .table .desc {
+  height: 30px;
+  background: #3F3F3F;
+  font-weight: 400;
+}
+
+.table-cont .table .table-col.hl-secondary .desc {
+  background: #6D6D6D;
+}
+
+.table-cont .table .table-col.hl-warning .desc {
+  background: #FF7300;
+}
+
+.table-wrapper .table-footer {
+  background: #303030;
+  border: 1px solid #131313;
+  border-radius: 0px 0px 20px 20px;
+  border-top: none;
+}
+
+.table-wrapper .pagination {
+  background: rgba(255, 255, 255, 0.1);
+  height: 50px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.hr{
+  border-top: 1px solid black;
+  margin: auto;
+  width: 80%;
+}
+
+.pagination-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-wrapper {
+  width: fit-content;
+  margin: auto;
+}
+.pagination{
+  border-radius: 10px;
+}
+
+.pages{
+  border: 1px solid #1FB598;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.pages .box{
+  border-right: 1px solid grey;
+  padding: 0px 4px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.pages .box:last-child {
+  border-right: none;
+}
+
+.pages .box img {
+  margin: 0px 5px;
+}
+
+#page-select{
+  width: 87px;
+  padding: 5px 15px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16.5323px);
+  border: 1px solid #1FB598;
+  border-radius: 10px;
+  outline: none;
+  margin-left: 30px;
+  height: 50px;
+}
+
+footer{
+  margin-top: 100px;
+}
