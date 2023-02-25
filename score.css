@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Quantico", sans-serif;
+  height: 100vw;
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 80px;
+}
+
+#navbar img {
+	width: 47px;
+}
+
+#ul-div {
+	margin-top: 13px;
+}
+
+#navbar ul {
+	display: flex;
+	list-style: none;
+	gap: 40px;
+	font-family: "Ubuntu", sans-serif;
+	height: fit-content;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.btn {
+	background: #1fb598;
+	color: white;
+	border-radius: 10px;
+	line-height: 15px;
+	width: 150px;
+}
+
+.login-image {
+	object-fit: contain;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-bottom: 100px;
+}
+
+.login-image img {
+	position: relative;
+	left: 0px;
+	width: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.login-image h1 {
+	color: #1fb598;
+	position: absolute;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 100px;
+}
+
+.container{
+  display: flex;
+  gap: 20px;
+}
+
+.title p{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100px;
+  color: #1fb598;
+}
+
+.score-board{
+  margin-bottom: 30px;
+}
+
+.score-board-box{
+  width: 413px;
+  height: 220px;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16.5323px);
+  border: 2px solid #9616C3;
+  border-radius: 20px;
+  padding: 20px 40px 0px 35px;
+}
+
+.date-update{
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-update p{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.date-update .final{
+  color: #1fb598;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.first-team,
+.second-team{
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+.first-team img,
+.second-team img{
+  padding-right: 20px;
+}
+
+.first-team p,
+.second-team p {
+  margin-bottom: 0px;
+}
+
+.first-team p strong,
+.second-team p strong{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.score{
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 30px;
+  margin-left: auto;
+}
+
+.show-btn{
+  display: flex;
+  justify-content: center;
+}
+
+.show-btn button{
+  background: #1fb598;
+	color: black;
+	border-radius: 10px;
+	line-height: 15px;
+  width: 200px;
+  height: 60px;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 100px;
+}
