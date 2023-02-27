@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quantico", sans-serif;
+  height: 100vw;
+}
+
+.login-image {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.login-image img {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.login-image h1 {
+  text-align: center;
+  color: #1fb598;
+  position: absolute;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  width: 50%;
+}
+
+.container .start-heading{
+  font-size: 50px;
+  font-weight: 700;
+  text-align: left;
+  color: #1FB598;
+}
+
+.container .tow-box-wrapper{
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.container .stat-box-wrapper .stat-box{
+  width: 630px;
+  height: 709px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+
+.container .stat-box-wrapper .stat-box .heading{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #1FB598;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 0px;
+  padding: 31px 0px 25px 30px;
+}
+
+.container .stat-box-wrapper .stat-box .stat-box-main .title{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+  padding: 20px 67px 20px 30px;
+  margin-bottom: 0px;
+}
+
+.container .stat-box-wrapper .stat-box .stat-box-main .score-table{
+  display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.container .stat-box-wrapper .stat-box .stat-box-main .score-table .number{
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+  padding: 0px 20px 0px 30px;
+  margin-bottom: 0px;
+}
+
+.container .stat-box-wrapper .stat-box .stat-box-main .score-table p{
+  margin-bottom: 0px;
+}
+
+.container .stat-box-wrapper .stat-box .stat-box-main .score-table img{
+  width: 54px;
+  height: 54px;
+}
+
+.container .stat-box-wrapper .stat-box .stat-box-main .score-table .player-name{
+  padding: 0px 152px 0px 20px;
+}
+
+.container .stat-box-wrapper .stat-box .stat-box-main .score-table .point{
+  text-align: right;
+  width: 125px;
+}
+
+footer{
+  margin-top: 70px;
+}

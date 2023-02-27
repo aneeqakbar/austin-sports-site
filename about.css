@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quantico", sans-serif;
+}
+
+.login-image {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.login-image img {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.login-image h1 {
+  text-align: center;
+  color: #1fb598;
+  position: absolute;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  width: 50%;
+}
+
+.about-section{
+  width: 100%;
+}
+
+.container .about-section-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 100px;
+}
+
+.container .about-section .about-section-wrapper .heading-para{
+  flex-direction: column;
+}
+
+.main-heading{
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  color: #1fb598;
+  margin-bottom: 0px;
+}
+
+.container .about-section-wrapper p{
+  font-size: 20px;
+  font-weight: 400;
+  padding: 30px 0px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+
+.container .about-section-wrapper img{
+  width: 542px;
+  height: 542px;
+}
+
+.container .about-section-wrapper .btn{
+  margin-top: 20px;
+  width: 158px;
+  height: 54px;
+}
+
+.container .value-section .value-section-wrapper{
+  text-align: center;
+}
+
+.container .value-section .value-section-wrapper h1{
+  font-size: 70px;
+  line-height: 100px;
+}
+
+.container .value-section .value-section-wrapper .desc{
+  width: 1103px;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0px auto;
+  padding-bottom: 30px;
+}
+
+.container .value-section .value-section-wrapper .read-more-wrapper{
+  display: flex;
+  gap: 20px;
+}
+
+.container .value-section .value-section-wrapper .read-more{
+  width: 305px;
+  height: 325px;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16.5323px);
+  border-radius: 19px;
+  border: 2px solid #9616C3;
+}
+
+.container .value-section .value-section-wrapper .read-more .read-more-title{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #1fb598;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.container .value-section .value-section-wrapper .read-more p{
+  margin-bottom: 0px !important;
+}
+
+.container .value-section .value-section-wrapper .read-more .read-more-para{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0px auto;
+  width: 265px;
+  margin-bottom: 0px;
+}
+
+.container .value-section .value-section-wrapper .read-more img{
+  padding-top: 25px;
+}
+
+.container .value-section .value-section-wrapper .read-more a{
+  color: #1fb598;
+}
+
+.show-btn{
+  margin-top: 30px;
+  width: 158px;
+  height: 54px;
+  background-color: #1fb598;
+  color: #fff;
+  border: none;
+	border-radius: 10px;
+}
+
+.team-section{
+  margin-bottom: 100px;
+}
+
+.team-section-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.team-section .team-section-wrapper .team-section-img{
+  margin-top: 100px;
+  padding-right: 20px;
+}
+
+.team-section .team-section-wrapper .title-para h1{
+  font-size: 70px;
+  line-height: 80px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
+
+.team-section .team-section-wrapper .title-para p{
+  font-family: Quantico;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.meet-section .meet-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meet-section .meet-section-wrapper .meet-section-image{
+  display: flex;
+}
+
+.meet-section .meet-section-wrapper .meet-section-image img{
+  margin: 50px 20px 0px 0px;
+}
+
+footer{
+  margin-top: 100px;
+}
