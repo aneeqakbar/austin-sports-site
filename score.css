@@ -26,14 +26,6 @@ body {
 	margin-top: 13px;
 }
 
-#navbar ul {
-	display: flex;
-	list-style: none;
-	gap: 40px;
-	font-family: "Ubuntu", sans-serif;
-	height: fit-content;
-	font-weight: bold;
-}
 
 a {
 	text-decoration: none;
@@ -49,20 +41,23 @@ a {
 }
 
 .login-image {
-	object-fit: contain;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  margin-bottom: 100px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .login-image img {
-	position: relative;
-	left: 0px;
-	width: 100%;
-	object-fit: cover;
-	z-index: -1;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  max-height: 350px;
+  min-height: 280px;
 }
+
 
 .login-image h1 {
 	color: #1fb598;
@@ -72,9 +67,10 @@ a {
 	line-height: 100px;
 }
 
-.container{
+.score-card-cont {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .title p{
@@ -92,7 +88,7 @@ a {
 .score-board-box{
   width: 413px;
   height: 220px;
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--bg-dark-color);
   backdrop-filter: blur(16.5323px);
   border: 2px solid #9616C3;
   border-radius: 20px;
@@ -165,4 +161,20 @@ a {
   font-size: 20px;
   line-height: 20px;
   margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .login-image .main-heading {
+    font-size: 40px !important;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .score-card {
+    width: 100%;
+  }
+  .score-board-box {
+    width: 100%;
+  }
 }

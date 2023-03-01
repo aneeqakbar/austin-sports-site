@@ -12,19 +12,21 @@ body {
 }
 
 .login-image {
-	object-fit: contain;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 100px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .login-image img {
-	position: relative;
-	left: 0px;
-	width: 100%;
-	object-fit: cover;
-	z-index: -1;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  max-height: 350px;
+  min-height: 280px;
 }
 
 .login-image h1 {
@@ -38,6 +40,9 @@ body {
 .membership-box-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  
 }
 
 .membership-box{
@@ -109,4 +114,38 @@ body {
 
 .footer{
   margin-top: 120px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .main-heading {
+    font-size: 50px !important;
+    text-align: center;
+  }
+  .membership-box-wrapper {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .free-membership {
+    padding: 0px 20px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+  .main-heading {
+    font-size: 40px !important;
+    line-height: 60px !important;
+  }
+  .membership-box {
+    min-width: 0px;
+    min-height: 600px;
+    width: 100%;
+  }
 }

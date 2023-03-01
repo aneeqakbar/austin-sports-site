@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quantico", sans-serif;
+}
+
+body p {
+  margin-bottom: 0px;
+}
+
+.login-image {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.login-image img {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  max-height: 350px;
+  min-height: 280px;
+}
+
+.login-image h1 {
+  text-align: center;
+  color: #1fb598;
+  position: absolute;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  /* width: 50%; */
+}
+
+.main-heading {
+  font-weight: 700;
+  font-size: 100px;
+  color: #1fb598;
+  margin-bottom: 0px;
+}
+
+.main-para {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.heading-input {
+  display: flex;
+  max-width: 858px;
+  width: 100%;
+  margin: 0px auto;
+  margin-bottom: 0px;
+  align-items: center;
+}
+
+.search-input {
+  position: relative;
+  margin-left: auto;
+  /* margin-right: 39px; */
+  color: white;
+}
+
+.search-input input {
+  width: 465px;
+  height: 50px;
+  text-align: start;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16.5323px);
+  border: 1px solid #1fb598;
+  border-radius: 20px;
+  outline: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  padding-left: 15px;
+}
+
+.search-input img {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.player-name-box {
+  max-width: 1280px;
+  min-height: 340px;
+  width: 100%;
+  background: rgba(240, 240, 240, 0.7);
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.player-name-box-wrapper {
+  padding: 15px 230px;
+  display: flex;
+}
+
+.main-img {
+  padding-right: 100px;
+}
+
+.side-img img {
+  position: relative;
+  bottom: 53px;
+  left: 159px;
+}
+
+.player-heading {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.point-table {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 18px;
+  gap: 110px;
+}
+
+.normal-para {
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.team-name {
+  padding-top: 30px;
+}
+
+.team-name p {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.team-desc {
+  padding-top: 20px;
+}
+
+.player-table {
+  width: 1280px;
+  height: 676px;
+  background: white;
+  border: 1px solid var(--text-dark-color);
+  border-radius: 20px;
+}
+
+.table-nav {
+  height: 69px;
+  background-color: #d1d1d1;
+  border-bottom: 1px solid black;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.table-nav-wrapper {
+  padding: 30px 165px 15px 30px;
+  display: flex;
+}
+
+.table-nav p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.game-log p {
+  padding-right: 234px;
+}
+
+.game p {
+  padding-right: 21px;
+}
+
+.field-goals p {
+  padding-right: 71px;
+}
+
+.three-points p {
+  padding-right: 43px;
+}
+
+.free-throws p {
+  padding-right: 58px;
+}
+
+.rebounds p {
+  padding-right: 40px;
+}
+
+.table-state {
+  height: 65px;
+  border-bottom: 1px solid black;
+}
+
+.table-state-wrapper {
+  height: 100%;
+}
+
+.table-state-heading {
+  padding: 0px 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.table-state-heading div {
+  flex: 1 1 0%;
+}
+
+.table-state-heading p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.type p {
+  padding-right: 60px;
+}
+
+footer{
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .player-name-box-wrapper {
+    flex-direction: column;
+    padding: 15px 115px;
+    align-items: center;
+  }
+  .point-table {
+    padding: 10px 0px;
+  }
+  .team-name {
+    padding-top: 10px;
+  }
+  .team-desc {
+    padding-top: 10px;
+  }
+  .main-img {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .heading-input {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .heading-input .search-input {
+    margin-left: 0px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .point-table {
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .point-table {
+    gap: 25px;
+  }
+  .player-heading {
+    font-size: 28px;
+  }
+  .main-para {
+    font-size: 40px;
+  }
+  .search-input input {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

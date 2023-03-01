@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .login-image img {
@@ -25,6 +25,8 @@ body {
   width: 100%;
   object-fit: cover;
   z-index: -1;
+  max-height: 350px;
+  min-height: 280px;
 }
 
 .login-image h1 {
@@ -34,24 +36,40 @@ body {
   font-weight: 700;
   font-size: 100px;
   line-height: 100px;
-  width: 50%;
+  /* width: 50%; */
 }
 
-.container section .section-wrapper .shirt-div{
-  height: 413px;
-  width: 413px;
+.container section .section-wrapper .product-card {
+  max-width: 413px;
+  height: 570px;
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(156, 156, 156, 0.25);
   border-radius: 20px;
-  background: url(./image/Rectangle446.png);
 }
-
-.short-div{
+.container section .section-wrapper .product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container section .section-wrapper .shirt-div {
   height: 413px;
-  width: 413px;
+  width: 100%;
   border-radius: 20px;
-  background: url(./image/Rectangle444.png);
+  border: 1px solid var(--text-dark-color);
+  overflow: hidden;
+  /* background: url(./image/Rectangle446.png); */
 }
 
-.container section .section-wrapper h1{
+.short-div {
+  height: 413px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid var(--text-dark-color);
+  overflow: hidden;
+  /* background: url(./image/Rectangle444.png); */
+}
+
+.container section .section-wrapper h1 {
   font-weight: 700;
   font-size: 50px;
   color: #1fb598;
@@ -59,20 +77,21 @@ body {
 }
 
 .container section .section-wrapper .shirt-price-div {
-  width: 413px;
+  width: 100%;
   height: 170px;
-  border: 1px solid black;
+  border: 1px solid var(--text-dark-color);
   border-top: none;
   border-radius: 0px 0px 20px 20px;
   top: -20px;
   position: relative;
+  height: 176px;
 }
 
-.container section .section-wrapper .shirt-price-div p{
+.container section .section-wrapper .shirt-price-div p {
   margin-bottom: 0px;
 }
 
-.container section .section-wrapper .shirt-price-div-p{
+.container section .section-wrapper .shirt-price-div-p {
   width: 170px;
   position: relative;
   top: 10px;
@@ -84,39 +103,39 @@ body {
   font-size: 24px;
 }
 
-.container section .section-wrapper .shirt-price-div .shirt-price-div-wrapper{
+.container section .section-wrapper .shirt-price-div .shirt-price-div-wrapper {
   padding: 20px;
   width: 100%;
 }
 
-.shirt-title-price{
+.shirt-title-price {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.title-price{
+.title-price {
   text-align: right;
   position: relative;
 }
 
-.button{
+.button {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.btn-border{
+.btn-border {
   border: 2px solid #1fb598;
-	color: black;
-	border-radius: 10px;
-	font-family: "Ubuntu", sans-serif;
-	line-height: 15px;
-	width: 150px;
+  color: black;
+  border-radius: 10px;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 15px;
+  width: 150px;
 }
 
-.btn-paddind{
+.btn-paddind {
   padding: 15px 0px;
 }
 
@@ -126,12 +145,15 @@ body {
   flex-wrap: wrap;
 }
 
-.show-btn{
+.show-btn {
   display: flex;
   justify-content: center;
   margin: 10px 0px 50px 0px;
 }
 
-footer{
+footer {
   margin-top: 100px;
+}
+
+@media only screen and (max-width: 500px) {
 }

@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .login-image img {
@@ -26,6 +26,8 @@ body {
   width: 100%;
   object-fit: cover;
   z-index: -1;
+  max-height: 350px;
+  min-height: 280px;
 }
 
 .login-image h1 {
@@ -35,7 +37,7 @@ body {
   font-weight: 700;
   font-size: 100px;
   line-height: 100px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .container .heading{
@@ -58,9 +60,20 @@ body {
   margin-bottom: 127px;
 }
 
+.container .article-wrapper .article-img {
+  flex-grow: 1;
+}
+
+.container .article-wrapper .article-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0px 30px 30px 0px;
+}
+
 .container .article-wrapper .article-box {
   width: 751px;
-  height: 596px;
+  min-height: 596px;
   border: 1px solid #1FB598;
   border-radius: 30px 0px 0px 30px;
 }
@@ -88,14 +101,14 @@ body {
 
 .table-wrapper {
   width: max-content;
-  margin: 40px auto;
+  margin: 0px auto;
   width: 1270px;
 }
 
 .table-nav {
   min-height: 97px;
   background: #262626;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--bg-dark-color);
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -233,7 +246,7 @@ body {
 
 .table-cont .table .heading,
 .table-cont .table .desc {
-  border: 1px solid black;
+  border: 1px solid var(--text-dark-color);
   display: grid;
   width: 100%;
 }
@@ -332,4 +345,52 @@ body {
 
 footer{
   margin-top: 100px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .article-wrapper {
+    flex-direction: column-reverse;
+    max-width: 751px;
+    width: 100%;
+    margin: auto;
+  }
+  .container .article-wrapper .article-img img {
+    border-radius: 35px 35px 0px 0px;
+  }
+  .container .article-wrapper .article-box {
+    border-radius: 0px 0px 35px 35px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container .title {
+    font-size: 40px;
+  }
+  .container .article-wrapper .article-box {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 500px) {
+  .login-image .main-heading {
+    font-size: 50px !important;
+  }
+  .container .title {
+    font-size: 30px;
+  }
+
+  .container .article-wrapper .article-box .article-lines .article-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .container .article-wrapper .article-box .article-lines p {
+    font-size: 16px;
+  }
+  .container .article-wrapper .article-box .article-lines {
+    padding: 30px;
+  }
 }

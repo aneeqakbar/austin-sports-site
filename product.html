@@ -10,23 +10,91 @@
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
-    <title>About</title>
+    <link rel="stylesheet" href="utils.css">
+    <title>Product</title>
   </head>
 
   <body>
-    <nav id="navbar">
-      <img src="./image/image9.png" alt="logo">
-      <div id="ul-div">
-        <ul>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">PRODUCT</a></li>
-          <li><a href="">NBA</a></li>
-          <li><a href="">NCAAB</a></li>
-          <li><a href="">ACCOUNT</a></li>
-          <li><a href="">MORE</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="./image/image9.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  NBA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">PRIZEPICKS EDGE FINDER</a></li>
+                  <li><a class="dropdown-item" href="#">ARTICLE</a></li>
+                  <li><a class="dropdown-item" href="#">TUTORIAL</a></li>
+                  <li><a class="dropdown-item" href="#">PROJECTION</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  NCAAB
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">NCAAB PRIZEPICKS EDGE FINDER</a></li>
+                  <li><a class="dropdown-item" href="#">NCAAB NEWS</a></li>
+                  <li><a class="dropdown-item" href="#">SCORES AND SCHEDULE</a></li>
+                  <li><a class="dropdown-item" href="#">STANDING</a></li>
+                  <li><a class="dropdown-item" href="#">RANKING</a></li>
+                  <li><a class="dropdown-item" href="#">STATS</a></li>
+                  <li><a class="dropdown-item" href="#">TEAMS</a></li>
+                  <li><a class="dropdown-item" href="#">PLAYERS</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACCOUNT
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">LOGIN</a></li>
+                  <li><a class="dropdown-item" href="#">SIGN UP</a></li>
+                  <li><a class="dropdown-item" href="#">AFFILIATE SIGN UP</a></li>
+                  <li><a class="dropdown-item" href="#">MEMBERSHIP PACKAGE</a></li>
+                  <li><a class="dropdown-item" href="#">PROFILE</a></li>
+                  <li><a class="dropdown-item" href="#">JOIN DISCORD</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  MORE
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">FAQs</a></li>
+                  <li><a class="dropdown-item" href="#">CONTACT US</a></li>
+                  <li><a class="dropdown-item" href="#">AFFILIATE PROGRAM</a></li>
+                  <li><a class="dropdown-item" href="#">TERMS OF SERVICES</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button class="btn">MEMBERSHIP OPTIONS</button>
+            </li>
+          </ul>
+        </div>
       </div>
-      <button class="btn">MEMBERSHIP OPTIONS</button>
     </nav>
     <div class="login-image">
       <h1 class="main-heading">PRODUCT</h1>
@@ -38,8 +106,10 @@
         <div class="section-wrapper">
           <h1>Shirts</h1>
           <div class="shirts-cont">
-            <div>
-              <div class="shirt-div"></div>
+            <div class="product-card">
+              <div class="shirt-div">
+                <img src="./image/Rectangle446.png" alt="">
+              </div>
               <div class="shirt-price-div">
                 <div class="shirt-price-div-wrapper">
                   <div class="shirt-title-price">
@@ -57,9 +127,10 @@
                 </div>
               </div>
             </div>
-
-            <div>
-              <div class="shirt-div"></div>
+            <div class="product-card">
+              <div class="shirt-div">
+                <img src="./image/Rectangle446.png" alt="">
+              </div>
               <div class="shirt-price-div">
                 <div class="shirt-price-div-wrapper">
                   <div class="shirt-title-price">
@@ -77,9 +148,10 @@
                 </div>
               </div>
             </div>
-
-            <div>
-              <div class="shirt-div"></div>
+            <div class="product-card">
+              <div class="shirt-div">
+                <img src="./image/Rectangle446.png" alt="">
+              </div>
               <div class="shirt-price-div">
                 <div class="shirt-price-div-wrapper">
                   <div class="shirt-title-price">
@@ -107,8 +179,10 @@
         <div class="section-wrapper">
           <h1>Shorts</h1>
           <div class="shirts-cont">
-            <div>
-              <div class="short-div"></div>
+            <div class="product-card">
+              <div class="shirt-div">
+                <img src="./image/Rectangle444.png" alt="">
+              </div>
               <div class="shirt-price-div">
                 <div class="shirt-price-div-wrapper">
                   <div class="shirt-title-price">
@@ -126,9 +200,10 @@
                 </div>
               </div>
             </div>
-
-            <div>
-              <div class="short-div"></div>
+            <div class="product-card">
+              <div class="shirt-div">
+                <img src="./image/Rectangle444.png" alt="">
+              </div>
               <div class="shirt-price-div">
                 <div class="shirt-price-div-wrapper">
                   <div class="shirt-title-price">
@@ -146,9 +221,10 @@
                 </div>
               </div>
             </div>
-
-            <div>
-              <div class="short-div"></div>
+            <div class="product-card">
+              <div class="shirt-div">
+                <img src="./image/Rectangle444.png" alt="">
+              </div>
               <div class="shirt-price-div">
                 <div class="shirt-price-div-wrapper">
                   <div class="shirt-title-price">
@@ -203,6 +279,7 @@
         <p>ALL RIGHTS RESERVED</p>
       </div>
     </footer>
+    <script src="./handle_dark_mode.js"></script>
 
   </body>
 

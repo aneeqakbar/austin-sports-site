@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .login-image img {
@@ -26,6 +26,8 @@ body {
   width: 100%;
   object-fit: cover;
   z-index: -1;
+  max-height: 350px;
+  min-height: 280px;
 }
 
 .login-image h1 {
@@ -35,7 +37,7 @@ body {
   font-weight: 700;
   font-size: 100px;
   line-height: 100px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .container .start-heading{
@@ -49,12 +51,15 @@ body {
   display: flex;
   gap: 20px;
   padding-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container .stat-box-wrapper .stat-box{
-  width: 630px;
+  max-width: 630px;
+  width: 100%;
   height: 810px;
-  border: 1px solid #000000;
+  border: 1px solid var(--text-dark-color);
   border-radius: 20px;
 }
 
@@ -127,4 +132,43 @@ body {
 
 footer{
   margin-top: 70px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .main-table-wrapper {
+    margin-bottom: 50px;
+  }
+  .container .tow-state-box-wrapper {
+    justify-content: start;
+    margin-bottom: 0px;
+    padding-bottom: 00px;
+  }
+  .container .stat-box-wrapper .stat-box .stat-box-main .title {
+    font-size: 20px;
+  }
+  .container .stat-box-wrapper .stat-box .stat-box-main .score-table .number {
+    font-size: 25px;
+    padding: 0px 10px 0px 20px;
+  }
+  .container .stat-box-wrapper .stat-box .stat-box-main .score-table .player-name{
+    padding: 0px 50px 0px 20px;
+  }
+  .container .stat-box-wrapper .stat-box .stat-box-main .score-table .point {
+    width: max-content;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container .stat-box-wrapper .stat-box .stat-box-main .score-table .player-name{
+    padding: 0px 20px 0px 20px;
+  }
+  .container .stat-box-wrapper .stat-box .stat-box-main .score-table .point {
+    width: max-content;
+    margin-left: auto;
+  }
+  .container .stat-box-wrapper .stat-box .stat-box-main .score-table .number {
+    font-size: 20px;
+  }
 }

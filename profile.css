@@ -25,15 +25,6 @@ body {
 	margin-top: 13px;
 }
 
-#navbar ul {
-	display: flex;
-	list-style: none;
-	gap: 40px;
-	font-family: "Ubuntu", sans-serif;
-	height: fit-content;
-	font-weight: bold;
-}
-
 a {
 	text-decoration: none;
 	color: black;
@@ -48,19 +39,21 @@ a {
 }
 
 .login-image {
-	object-fit: contain;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 100px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .login-image img {
-	position: relative;
-	left: 0px;
-	width: 100%;
-	object-fit: cover;
-	z-index: -1;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  max-height: 350px;
+  min-height: 280px;
 }
 
 .login-image h1 {
@@ -109,7 +102,8 @@ a {
 	color: white;
 	border-radius: 10px;
 	margin: 30px auto 100px auto;
-	width: 500px;
+	max-width: 500px;
+	width: 100%;
 	padding: 12px 0px;
 	border: none;
 	font-weight: 400;
@@ -139,4 +133,45 @@ a {
 
 #address-input input{
   width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .form {
+    align-items: center;
+  }
+  .inputs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #address-input input{
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .main-heading {
+    font-size: 50px !important;
+  }
+  .form {
+    width: 100%;
+  }
+  .single-input {
+    width: 100%;
+  }
+  .single-input input {
+    width: 100%;
+  }
+  #address-input input{
+    width: 100%;
+  }
+  .discord-input {
+    flex-wrap: wrap;
+  }
+  .discord-input p {
+    text-align: center;
+    flex-basis: 100%;
+  }
 }

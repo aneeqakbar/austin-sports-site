@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 40px 80px;
+  background-color: var(--secondary-color) !important;
 }
 
 #navbar img {
@@ -12,25 +13,30 @@
 	margin-top: 13px;
 }
 
-#navbar ul {
+#navbar .navbar-nav {
 	display: flex;
 	list-style: none;
 	gap: 40px;
 	font-family: "Ubuntu", sans-serif;
 	height: fit-content;
 	font-weight: bold;
+  align-items: center;
+  color: var(--text-dark-color);
 }
 
-a {
-	text-decoration: none;
-	color: black;
+#navbar .navbar-collapse {
+  justify-content: end;
 }
 
-.btn {
-	background: #1fb598;
-	color: white;
-	border-radius: 10px;
-	font-family: "Ubuntu", sans-serif;
-	line-height: 15px;
-	width: 150px;
+.navbar-toggler {
+  background-color: var(--primary-color);
+} 
+
+@media only screen and (max-width: 992px){
+  #navbar {
+    padding: 20px 40px;
+  }
+  #navbar .navbar-nav {
+    gap: 20px;
+  }
 }

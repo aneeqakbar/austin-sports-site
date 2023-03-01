@@ -25,15 +25,6 @@ body {
 	margin-top: 13px;
 }
 
-#navbar ul {
-	display: flex;
-	list-style: none;
-	gap: 40px;
-	font-family: "Ubuntu", sans-serif;
-	height: fit-content;
-	font-weight: bold;
-}
-
 a {
 	text-decoration: none;
 	color: black;
@@ -48,18 +39,21 @@ a {
 }
 
 .login-image {
-	object-fit: contain;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .login-image img {
-	position: relative;
-	left: 0px;
-	width: 100%;
-	object-fit: cover;
-	z-index: -1;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  max-height: 350px;
+  min-height: 280px;
 }
 
 .login-image h1 {
@@ -71,7 +65,7 @@ a {
 }
 
 article{
-  width: fit-content;
+  width: 100%;
   margin: auto;
 }
 
@@ -136,4 +130,25 @@ article{
 
 footer{
   margin-top: 50px;
+}
+
+.tutorial-section {
+  padding: 20px;
+}
+
+.owl-nav {
+  position: absolute;
+  top: -74px;
+  right: 0px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  margin-right: 40px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .article-para p {
+    width: 80%;
+    font-size: 16px;
+  }
 }
