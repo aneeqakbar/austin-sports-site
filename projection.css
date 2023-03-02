@@ -112,6 +112,10 @@ body {
   border-radius: 20px 20px 0px 0px;
 }
 
+.table-nav p {
+  color: var(--text-inverted-color);
+}
+
 .nav-title {
   margin-bottom: 0px;
   font-size: 30px;
@@ -223,6 +227,10 @@ body {
   border-bottom: none;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+.table-cont p {
+  color: var(--text-inverted-color);
 }
 
 .table-cont .table {

@@ -11,16 +11,12 @@ body {
   font-family: "Quantico", sans-serif;
 }
 
-body p {
-  margin-bottom: 0px;
-}
-
 .login-image {
   object-fit: contain;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .login-image img {
@@ -34,41 +30,68 @@ body p {
 }
 
 .login-image h1 {
-  text-align: center;
   color: #1fb598;
   position: absolute;
   font-weight: 700;
   font-size: 100px;
   line-height: 100px;
-  /* width: 50%; */
 }
 
-.heading p {
-  font-weight: 700;
-  font-size: 30px;
-  padding-bottom: 20px;
-}
-
-.commision-para p {
+.accordian-wrapper {
   margin-bottom: 30px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  background: var(--bg-dark-color);
+  backdrop-filter: blur(16.5323px);
+  border: 1px solid #9616c3;
+  border-radius: 20px;
   font-weight: 400;
+  font-size: 20px;
+  color: var(--text-dark-color);
+}
+
+.accordion.active img {
+  transform: rotateZ(0deg);
+}
+
+.icon img {
+  height: 16px;
+  transform: rotateZ(180deg);
+}
+
+button h4 {
   font-size: 24px;
-  line-height: 39px;
-  color: #9B9B9B;
+  line-height: 30px;
+  margin: 0px;
 }
 
-footer{
-  margin-top: 70px;
+.active,
+.accordion:hover {
+  background-color: var(--bg-dark-color);
 }
 
-@media only screen and (max-width: 768px) {
-  .heading p {
-    font-size: 25px;
-  }
-  
-  .commision-para p {
+.panel {
+  padding-top: 20px;
+  display: none;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .accordion {
     font-size: 16px;
-    line-height: 25px;
   }
-  
+  button h4 {
+    font-size: 20px;
+  }
 }

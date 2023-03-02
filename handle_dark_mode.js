@@ -1,18 +1,29 @@
 const bodyElem = document.getElementsByTagName("body");
 const toggleDarkModeBtn = document.getElementById("toggle-dark-mode");
+const sunIcon = toggleDarkModeBtn.querySelector("#sun-img");
+const moonIcon = toggleDarkModeBtn.querySelector("#moon-img");
 
 toggleDarkModeBtn?.addEventListener("click", (e) => {
   e.preventDefault();
-  bodyElem[0].classList.toggle("dark");
-  if (bodyElem[0].classList.contains("dark")) {
-    setCookie("dark_mode", true);
-  } else {
-    setCookie("dark_mode", false);
-  }
+  toggleDarkMode()
 })
 
 function handleDarkMode() {
   if (getCookie("dark_mode")) {
+    toggleDarkMode(true);
+  }
+}
+
+function toggleDarkMode(status=false) {
+  if (bodyElem[0].classList.contains("dark") && !status) {
+    bodyElem[0].classList.toggle("dark", false);
+    setCookie("dark_mode", false);
+    sunIcon?.classList?.toggle("hidden", true);
+    moonIcon?.classList?.toggle("hidden", false);
+  } else {
+    setCookie("dark_mode", true);
+    sunIcon?.classList?.toggle("hidden", false);
+    moonIcon?.classList?.toggle("hidden", true);
     bodyElem[0].classList.toggle("dark", true);
   }
 }

@@ -52,7 +52,7 @@ body {
   width: 629px;
   height: 68px;
   background: #C9C9C9;
-  border: 1px solid var(--bg-dark-color);
+  background-color: var(--table-row-light-color);
   border-radius: 20px 20px 0px 0px;
   display: flex;
   justify-content: space-between;
@@ -85,15 +85,16 @@ body {
 
 
 .dark{
-  background-color: #A6A6A6;
+  background-color: var(--table-row-dark-color);
 }
 
 .light{
-  background: #ddd;
+  background-color: var(--table-row-light-color);
 }
 
 .border-bottom{
   border-radius: 0px 0px 20px 20px;
+  border-color: transparent !important;
 }
 
 footer{

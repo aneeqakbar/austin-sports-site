@@ -178,6 +178,9 @@ body {
   background: #3F3F3F;
   font-weight: 400;
 }
+.table-cont p{
+  color: var(--text-inverted-color);
+}
 
 .table-cont .table .table-col.hl-secondary .desc {
   background: #6D6D6D;

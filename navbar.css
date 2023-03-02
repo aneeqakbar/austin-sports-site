@@ -32,6 +32,22 @@
   background-color: var(--primary-color);
 } 
 
+#toggle-dark-mode {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: var(--secondary-inverted-color);
+}
+
+#toggle-dark-mode img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
 @media only screen and (max-width: 992px){
   #navbar {
     padding: 20px 40px;

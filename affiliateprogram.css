@@ -90,3 +90,25 @@ body {
   width: 150px;
   margin: 0px auto;
 }
+
+@media only screen and (max-width: 1000px) {
+  .title h1 {
+    font-size: 50px;
+  }
+  .heading h3 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .heading h3 {
+    font-size: 30px;
+  }
+  .commision-para p {
+    font-size: 20px;
+  }
+}

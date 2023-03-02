@@ -77,6 +77,10 @@ a {
   display: flex;
 }
 
+.news-paras p {
+  color: var(--text-inverted-color);
+}
+
 .title {
   padding: 28px 65px 20px 25px;
   font-style: normal;
@@ -92,6 +96,7 @@ a {
   font-size: 12px;
   line-height: 30px;
   padding: 0px 28px 28px 26px;
+  margin-bottom: 0px;
 }
 
 .article-box {
