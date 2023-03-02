@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quantico", sans-serif;
+}
+
+.login-image {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.login-image img {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  max-height: 350px;
+  min-height: 280px;
+}
+
+.login-image h1 {
+  text-align: center;
+  color: #1fb598;
+  position: absolute;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  /* width: 50%; */
+}
+
+.title h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 70px;
+  color: #1fb598;
+  margin-top: 100px;
+}
+
+.heading h3 {
+  margin: 30px 0px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 39px;
+  color: black;
+}
+
+.heading p {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.commision-para p {
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 39px;
+  color: #9B9B9B;
+}
+
+.commision-para ul{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 39px;
+  color: #9B9B9B;
+  padding-left: 25px;
+  margin-bottom: 50px;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.button button{
+  height: 40px;
+  width: 150px;
+  margin: 0px auto;
+}

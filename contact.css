@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quantico", sans-serif;
+}
+
+.login-image {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.login-image img {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  max-height: 350px;
+  min-height: 280px;
+}
+
+.login-image h1 {
+  color: #1fb598;
+  position: absolute;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.inputs {
+	display: flex;
+}
+
+.container p {
+	font-weight: 400;
+	font-size: 24px;
+	margin: 0px !important;
+	padding: 20px 0px;
+}
+
+.container input {
+	margin: 0px !important;
+	display: flex;
+	align-items: center;
+	border-radius: 7px;
+	font-size: 20px;
+	width: 500px;
+	height: 55px;
+	padding: 20px;
+}
+
+.save-btn {
+	align-items: center;
+	background: #1fb598;
+	color: white;
+	border-radius: 10px;
+	margin: 30px auto 0px auto;
+	max-width: 500px;
+	width: 200px;
+	padding: 12px 0px;
+	border: none;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.sign-btn {
+	border: 2px solid #1fb598;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	padding: 8px 0px;
+	width: 500px;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.join-p {
+	text-align: center;
+}
+
+.single-input {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 20px;
+}
+
+#address-input input{
+  width: 100%;
+}
+
+#message-input input{
+  width: 100%;
+  height: 220px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .form {
+    align-items: center;
+  }
+  .inputs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #address-input input{
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .main-heading {
+    font-size: 50px !important;
+  }
+  .form {
+    width: 100%;
+  }
+  .single-input {
+    width: 100%;
+  }
+  .single-input input {
+    width: 100%;
+  }
+  #address-input input{
+    width: 100%;
+  }
+  .discord-input {
+    flex-wrap: wrap;
+  }
+  .discord-input p {
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
